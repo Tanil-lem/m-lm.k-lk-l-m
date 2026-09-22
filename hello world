@@ -1,2 +1,19 @@
 hey 
 how are you doing
+Steps to disable GPG when committing a text
+ NB:every pproject folder contais a hidden folder called .git. inside the folder is a file name config that controlS Git for that project. 
+Go to file explorer(Your standard windows folder browser)
+go to your project folder(where your code files are located
+at the top menu of file explorer, click view or look for the three dots ... depending on your windows version
+hover show and make sure Hidden items has a checkmark next to it.
+you should see a semi-transparent folder name .git appear in your project folder
+Double -click to open that newly  revealed .git folder
+Look for a file simply named config(no extension like .txt)
+right-click on config, choose Open with and select Notepad.
+Turn off GPG signing inside that fiel
+scroll to the very bottom of the file , add a new line,
+[commit]
+     gpgsign = false
+click file= save
+
+
